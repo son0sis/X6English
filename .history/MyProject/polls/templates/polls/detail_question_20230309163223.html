@@ -1,0 +1,11 @@
+{% extends 'polls/base.html' %}
+
+{% block content %}
+    {% if qs %}
+     
+     {% for item in qs.choice_set.all %}
+        {{item.choice_text}}
+     {% endfor %}
+        
+    {% endif %}  
+{% endblock content %}

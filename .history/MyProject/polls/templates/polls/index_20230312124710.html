@@ -1,0 +1,15 @@
+{% extends 'polls/base.html' %}
+
+{% block content %}
+    <h1>HEllo</h1>
+    <p>this is my website</p>
+<h2>tai san cua toi gom
+<ul>{% for item in item %}
+        {% if item != 'laptop' %}
+             <li>{{item}}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
+</h2>
+
+{% endblock %}

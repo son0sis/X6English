@@ -1,0 +1,16 @@
+{% extends 'polls/base.html' %}
+
+{% block content %}
+    
+    {% if dsquest %}
+        
+        {% for item in dsquest %}
+            {{item.id}}
+        {% endfor %}
+        {% else %}
+            <h2 style="color:red"> Khong co gi het </h2>
+        
+    {% endif %}
+        
+{% endblock content %}
+    
